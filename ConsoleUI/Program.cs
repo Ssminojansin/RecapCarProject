@@ -15,6 +15,8 @@ namespace ConsoleUI
                 Console.WriteLine(car.CarName );
             }
 
+            carManager.Add(new Car {BrandId=2,ColorId=4,CarName = "Ds",DailyPrice=4500,Descriptions="Elektrikli",ModelYear=2025 } );
+
             
         }
     }
