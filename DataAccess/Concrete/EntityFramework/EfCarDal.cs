@@ -15,14 +15,11 @@ namespace DataAccess.Concrete.EntityFramework
         {
             using (SqlServerContext context = new SqlServerContext())
             {
-                if (true)
-                {
-                    
-                }
+               
 
-                //var addedCar = context.Entry(entity);
-                //addedCar.State = EntityState.Added;
-                //context.SaveChanges();
+                var addedCar = context.Entry(entity);
+                addedCar.State = EntityState.Added;
+                context.SaveChanges();
 
             }
         }
